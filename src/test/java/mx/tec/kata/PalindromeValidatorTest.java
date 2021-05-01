@@ -46,4 +46,18 @@ PalindromeValidator validator = new PalindromeValidator();
 		assertEquals(expectedResult, actualResult);
 
 	}
+	
+	@Test
+	void given3LetterWord_whenValidatingPalindrome_thenTrue() {
+		// Given
+		String string = "ada";
+
+		// When
+		boolean actualResult = validator.validate(string);
+
+		// Then
+		boolean expectedResult = true;
+		assertEquals(expectedResult, actualResult);
+
+	}
 }
